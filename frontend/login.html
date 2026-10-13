@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>TransitGo · Sign in</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap">
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="frame">
+ <nav class="side" aria-label="TransitGo"><svg class="logo" width="26" height="26" viewBox="0 0 24 24"><path d="M12 2c3 4 6.5 6.5 6.5 11.2a6.5 6.5 0 0 1-13 0C5.5 11 6.8 9.6 8 8.6c0 2 .9 3.2 2 3.4-.4-4 0-7 2-10z" fill="var(--accent)"/></svg></nav>
+ <div class="main"><div class="board">
+  <section class="left">
+   <div class="art"><svg viewBox="0 0 400 340" role="img" aria-label="Shuttle on a campus route">
+    <circle cx="326" cy="62" r="34" fill="var(--accent)"/><path d="M300 54c16-14 38-10 50 6M296 72c20 8 40 0 54-14M308 38c14 22 8 40-4 52" stroke="#fff" fill="none" stroke-width="1.6" opacity=".75"/>
+    <path d="M40 80q10-16 26-8 8-10 24 0 14 0 14 10H40z" fill="none" stroke="var(--ink)" stroke-width="1.4"/>
+    <path d="M30 262c60-70 120 30 180-30s100 10 160-40" fill="none" stroke="var(--ink)" stroke-width="2" stroke-dasharray="2 7" stroke-linecap="round"/>
+    <g stroke="var(--ink)" stroke-width="2"><circle cx="30" cy="262" r="9" fill="var(--yel)"/><circle cx="120" cy="238" r="9" fill="var(--paper)"/><circle cx="210" cy="232" r="9" fill="var(--paper)"/><circle cx="300" cy="222" r="9" fill="var(--paper)"/><circle cx="370" cy="192" r="9" fill="var(--accent)"/></g>
+    <g transform="translate(110,130)" stroke="var(--ink)" stroke-width="2"><rect width="150" height="70" rx="12" fill="var(--green)"/><rect x="14" y="14" width="30" height="24" fill="var(--paper)"/><rect x="52" y="14" width="30" height="24" fill="var(--paper)"/><rect x="90" y="14" width="30" height="24" fill="var(--paper)"/><rect x="128" y="14" width="14" height="40" fill="var(--paper)"/><path d="M0 46h150" fill="none"/><circle cx="34" cy="72" r="13" fill="var(--ink)"/><circle cx="116" cy="72" r="13" fill="var(--ink)"/><rect x="60" y="-22" width="30" height="22" fill="var(--red)"/><path d="M60-22l15-14 15 14" fill="var(--ink)"/></g>
+   </svg></div>
+   <h2 id="ttl"></h2><p id="dsc"></p><div class="dots" id="dots"></div>
+  </section>
+  <section class="right">
+   <h1>TransitGo</h1>
+   <p class="sub">Campus shuttle routing &amp; capacity scheduling</p>
+   <div class="row" role="tablist"><button class="tab on" id="t-reg" role="tab" type="button">Create account</button><button class="tab" id="t-log" role="tab" type="button">Sign in</button></div>
+   <button class="opt" id="guest" type="button">Continue as guest</button>
+   <div class="sep">or use email</div>
+   <input class="fld" id="name" placeholder="Full name" autocomplete="name" aria-label="Full name">
+   <input class="fld" id="email" type="email" placeholder="Email address" autocomplete="email" aria-label="Email address">
+   <div class="pw"><input class="fld" id="pw" type="password" placeholder="Password (8+ characters)" autocomplete="current-password" aria-label="Password"><button type="button" id="eye" aria-label="Show password">show</button></div>
+   <p class="err" id="err" role="alert"></p>
+   <button class="go" id="go" type="button">Continue</button>
+  </section>
+ </div></div>
+</div>
+<script src="/static/login.js"></script>
+</body>
+</html>
